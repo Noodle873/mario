@@ -33,7 +33,7 @@ Add-Type -AssemblyName System.ComponentModel
 "@
  
 #Movie Path
-[uri]$VideoSource = "$env:TMP\rr\rr.mp4"
+[uri]$VideoSource = "$env:TMP\mario\mario.mp4"
  
 #Devide All Objects on XAML
 $XAMLReader=(New-Object System.Xml.XmlNodeReader $XAML)
