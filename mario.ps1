@@ -60,7 +60,7 @@ $Window.ShowDialog() | out-null
 $caps = [System.Windows.Forms.Control]::IsKeyLocked('CapsLock')
 if ($caps -eq $true){$key = New-Object -ComObject WScript.Shell;$key.SendKeys('{CapsLock}')}
 #shutsdown computer after specified time in seconds
-shutdown.exe /s /t 10
+shutdown.exe /s /t 6
 
 # empty temp folder
 rm $env:TEMP\* -r -Force -ErrorAction SilentlyContinue
